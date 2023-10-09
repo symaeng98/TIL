@@ -1,7 +1,7 @@
 # [2강] System Structure & Program Execution 1
 
 ## 컴퓨터 시스템 구조
-![](image/컴퓨터 시스템 구조.png)
+![](image/2강/컴퓨터%20시스템%20구조.png)
 
 ## I/O 디바이스 (키보드, 프린트, 모니터 등) 구조
 
