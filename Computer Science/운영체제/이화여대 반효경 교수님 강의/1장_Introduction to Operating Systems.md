@@ -1,4 +1,4 @@
-# [1강] Introduction to Operating Systems
+# [1장] Introduction to Operating Systems
 
 ## 운영체제란?
 
