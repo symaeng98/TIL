@@ -6,8 +6,8 @@
 ## I/O 디바이스 (키보드, 프린트, 모니터 등) 구조
 
 - Disk를 I/O 디바이스로 볼 수도 있음 (파일 시스템에 입력하고 출력하기 때문)
-- CPU에게 작업 공간인 Memory가 있듯이, I/O 디바이스들도 작업 공간이 있음(초록색 상자) → local buffer
-- device driver는 CPU 역할(하드웨어), device driver는 소프트웨어임
+- CPU에게 작업 공간인 Memory가 있듯이, I/O 디바이스들도 작업 공간이 있음(local buffer)
+- device controller는 CPU 역할(하드웨어), device driver는 소프트웨어임
 
 ## CPU의 구조와 역할
 
@@ -105,7 +105,7 @@
 ![](image/2장/프로그램%20실행%20구조.png)
 A.exe, B.exe를 실행한다고 했을 때 어떤 일이 일어날까?
 
-- 바로 Physical memory에 올라가지 않고, 각 **프로그램마다 독립적으로 갖는 메모리인 Virtual memory**를 할당 받음
+- 바로 Physical memory에 올라가지 않고, 각 **프로그램마다 독립적으로 갖는 메모리인 Virtual memory**를 할당 받음 (하드디스크 or SSD)
   - Virtual memroy는 stack, data, code, heap으로 이루어져 있음
     - **code**: 프로그램을 실행할 때 필요한 코드들
     - **data**: 전역 변수, 동적 할당된 데이터
