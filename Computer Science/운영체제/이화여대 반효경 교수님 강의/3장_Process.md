@@ -42,13 +42,13 @@
 
 ## 프로세스의 상태
 
-![](image/3장/프로세스 상태.png)
+![](image/3장/프로세스_상태.png)
 
 - Ready queue에 들어갔다 나왔다 반복
 - 공유 데이터에 접근할 때에도 Resource queue에 들어가서 대기함
 - 놀이기구 줄 서는 것과 같음
 
-![](image/3장/프로세스 상태2.png)
+![](image/3장/프로세스_상태2.png)
 
 - Kernel이 data 영역에 자료구조인 queue를 만들고 그 안에서 관리함
     - 각 I/O 디바이스에 queue가 있는게 아님
@@ -75,7 +75,7 @@
 
 CPU를 한 프로세스에서 다른 프로세스로 넘겨주는 과정
 
-![](image/3장/Context Switch.png)
+![](image/3장/Context_Switch.png)
 
 CPU가 다른 프로세스에게 넘어갈 때 운영체제는 아래의 작업들을 수행함
 
@@ -84,7 +84,7 @@ CPU가 다른 프로세스에게 넘어갈 때 운영체제는 아래의 작업�
     - memory map 또한 저장
 - CPU를 새롭게 얻는 프로세스의 상태를 PCB에서 읽어옴
 
-![](image/3장/Context Switch 2.png)
+![](image/3장/Context_Switch_2.png)
 
 System call이나 Interrupt 발생 시 반드시 context switch가 일어나는 것은 아님
 
@@ -142,7 +142,7 @@ Blocked vs Suspended
 
 ### 프로세스 상태도
 
-![](image/3장/프로세스 상태도.png)
+![](image/3장/프로세스_상태도.png)
 
 - Running이 두 가지로 나뉨
     - System call이 발생한다고 해서 기존 프로세스가 running하지 않는게 아님
