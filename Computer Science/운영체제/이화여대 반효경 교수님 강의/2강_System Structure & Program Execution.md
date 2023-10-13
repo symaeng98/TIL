@@ -1,7 +1,7 @@
 # [2장] System Structure & Program Execution 1
 
 ## 컴퓨터 시스템 구조
-![](image/2장/컴퓨터%20시스템%20구조.png)
+![](image/2장/컴퓨터_시스템_구조.png)
 
 ## I/O 디바이스 (키보드, 프린트, 모니터 등) 구조
 
@@ -96,13 +96,13 @@
 
 
 ## 저장장치 계층 구조
-![](image/2장/저장장치%20계층%20구조.png)
+![](image/2장/저장장치_계층_구조.png)
 - Register, Cache Memory는 CPU 안에 있음
 - Volatility: 휘발성
 - Primary는 CPU가 직접 접근 가능한 메모리
 
 ## 프로그램의 실행 (메모리 load)
-![](image/2장/프로그램%20실행%20구조.png)
+![](image/2장/프로그램_실행_구조.png)
 A.exe, B.exe를 실행한다고 했을 때 어떤 일이 일어날까?
 
 - 바로 Physical memory에 올라가지 않고, 각 **프로그램마다 독립적으로 갖는 메모리인 Virtual memory**를 할당 받음 (하드디스크 or SSD)
@@ -117,7 +117,7 @@ A.exe, B.exe를 실행한다고 했을 때 어떤 일이 일어날까?
 - 그렇기 때문에 각 프로세스의 logical address를 Physical address로 변환을 해줘야됨
 
 ## 커널 주소 공간의 내용
-![](image/2장/커널%20주소%20공간%20내용.png)
+![](image/2장/커널_주소_공간_내용.png)
 - 커널도 하나의 프로그램이기 때문에 code, data, stack으로 이루어져 있음
   - code: 자원 관리, 편리한 서비스, 인터럽트 처리 코드 등
   - data: 운영체제가 CPU, Memory, Disk와 소통하기 때문에, 이런 **하드웨어들을 관리하기 위한 자료구조들** (위의 그림은 추상적으로 그려놓은 것), 어떤 프로세스가 얼마나 CPU를 썼는지 등에 대해 관리하기 위한 자료구조인 **PCB**를 가짐
