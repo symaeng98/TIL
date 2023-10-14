@@ -76,3 +76,29 @@ Dispatcher
     - 극단적인 상황이라면
         - q가 길면 → FCFS
         - q가 짧으면 → **context switch 오버헤드가 커짐**
+- Multilevel Queue
+    - 이전까진 줄이 한 줄이었는데 우선순위 별로 줄을 여러 개 두고, 제일 높은 우선순위부터 순차적으로 진행됨
+    - 각 큐는 독립적인 스케줄링 알고리즘을 가짐
+- Multilevel Feedback Queue
+    - 우선순위별로 queue를 두지만, 우선순위가 바뀌면서 할당이 됨
+    - 그렇다면 기준이 무엇일까?
+        - 처음 들어오는 프로세스는 우선순위 높게 줌, 하지만 time quantum을 짧게 줌
+        - 우선순위가 낮아질수록 time qunatum이 길어짐
+
+## Multiple-Processor Scheduling
+
+- Homogeneous processor인 경우
+    - queue에 한 줄로 세워서 각 프로세서가 알아서 처리
+- Load sharing
+    - 특정 프로세서에 job이 몰리지 않도록 부하를 적절히 두어야 함
+- Symmetric Multiprocessing
+    - 각 프로세서가 알아서 스케줄링 결정
+- Asymmetric multiprocessing
+    - 하나의 프로세서가 책임지고 다른 프로세서는 따라감
+
+## Thread Scheduling
+
+- Local Scheduling
+    - 사용자 프로그램의 프로세스가 알아서 스레드 스케줄링 (어떤 스레드에게 CPU 줄 지 결정)
+- Global Scheduling
+    - 커널이 스레드 스케줄링
